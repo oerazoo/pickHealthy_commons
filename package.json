@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "pg": "^8.16.0"
-  }
+  },
+  "publishConfig": {
+  "@oerazoo:registry": "https://npm.pkg.github.com"
+}
 }
