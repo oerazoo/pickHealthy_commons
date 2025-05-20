@@ -1,0 +1,14 @@
+{
+  "name": "commons-ms",
+  "version": "1.0.0",
+  "description": "Librerias comunes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristhian Reyes - dataSquad",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.16.0"
+  }
+}
