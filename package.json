@@ -1,6 +1,6 @@
 {
   "name": "@oerazoo/commons-ms",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Librerias comunes",
   "main": "main.js",
   "scripts": {
@@ -10,9 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "pg": "^8.16.0"
-  },
-  "publishConfig": {
-    "@oerazoo:registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "jasmine-core": "^5.7.1",
