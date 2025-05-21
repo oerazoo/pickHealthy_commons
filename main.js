@@ -1,7 +1,7 @@
-const queueManager = require('./src/queueManager/QueueManager');
-const watchdog = require('./src/queueManager/watchdog');
+const QueueManager = require('./src/queueManager/QueueManager');
+const Watchdog = require('./src/queueManager/watchdog');
 
 module.exports = {
-  ...queueManager,
-  ...watchdog
+  QueueManager,
+  Watchdog
 };
