@@ -3,5 +3,5 @@ const watchdog = require('./queueManager/watchdog');
 
 module.exports = {
   ...queueManager,
-  ...watchdog,
+  ...watchdog
 };
