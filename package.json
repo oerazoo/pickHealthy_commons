@@ -1,5 +1,5 @@
 {
-  "name": "commons-ms",
+  "name": "@oerazoo/commons-ms",
   "version": "1.0.3",
   "description": "Librerias comunes",
   "main": "index.js",
