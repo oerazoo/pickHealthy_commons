@@ -12,7 +12,7 @@
     "pg": "^8.16.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "@oerazoo:registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "jasmine-core": "^5.7.1",
