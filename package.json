@@ -4,7 +4,7 @@
   "description": "Librerias comunes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Cristhian Reyes - dataSquad",
   "license": "ISC",
@@ -12,6 +12,10 @@
     "pg": "^8.16.0"
   },
   "publishConfig": {
-  "@oerazoo:registry": "https://npm.pkg.github.com"
-}
+    "@oerazoo:registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "jasmine-core": "^5.7.1",
+    "jest": "^29.7.0"
+  }
 }
