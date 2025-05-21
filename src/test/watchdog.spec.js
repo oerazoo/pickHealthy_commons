@@ -1,5 +1,5 @@
-const startWatchdog = require('./watchdog');
-const QueueManager = require('./QueueManager');
+const startWatchdog = require('../queueManager/watchdog');
+const QueueManager = require('../queueManager/QueueManager');
 
 jest.useFakeTimers();
 

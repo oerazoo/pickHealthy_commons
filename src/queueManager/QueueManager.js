@@ -1,8 +1,21 @@
 const { Pool } = require('pg');
 
+/**
+ * QueueManager administra una cola de mensajes usando PostgreSQL.
+ */
 class QueueManager {
   /**
-   * @param {Object} config - Configuración de conexión para pg.Pool
+   * Crea una instancia de QueueManager.
+   * 
+   * @param {Object} config - Configuración de conexión para pg.Pool.
+   * Debe incluir las siguientes propiedades:
+   *   @param {string} config.user - Usuario de la base de datos.
+   *   @param {string} config.host - Host de la base de datos.
+   *   @param {string} config.database - Nombre de la base de datos.
+   *   @param {string} config.password - Contraseña del usuario.
+   *   @param {number} config.port - Puerto de conexión.
+   *   (Opcional) Puedes incluir otras opciones soportadas por pg.Pool.
+   * 
    */
   constructor(config) {
     this.pool = new Pool(config);

@@ -1,4 +1,4 @@
-const QueueManager = require('./QueueManager');
+const QueueManager = require('../queueManager/QueueManager');
 const { Pool } = require('pg');
 
 describe('QueueManager', () => {
