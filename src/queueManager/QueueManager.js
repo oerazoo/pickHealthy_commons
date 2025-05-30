@@ -46,7 +46,7 @@ class QueueManager {
       WHERE id IN (
         SELECT id FROM queue
         WHERE topic = $2
-          AND status = 'pending'
+          AND status in ('pending','retrying')
           AND locked_by IS NULL
           AND locked_at IS NULL
         ORDER BY created_at ASC
