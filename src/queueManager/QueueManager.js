@@ -18,7 +18,15 @@ class QueueManager {
    * 
    */
   constructor(config) {
+    console.log('QueueManager initialized with config:', config);
     this.pool = new Pool(config);
+
+    // Establecer el esquema por defecto si viene en config.schema
+    if (config.schema) {
+      this.pool.query(`SET search_path TO ${config.schema};`).catch(err => {
+        console.error('Error setting schema:', err);
+      });
+    }
   }
 
   // Crear un nuevo mensaje en la cola (enqueue)

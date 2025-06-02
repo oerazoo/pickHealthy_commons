@@ -1,5 +1,5 @@
 services:
-  postgres:
+  postgres-commons-db:
     image: postgres:15
     container_name: postgres-commons-ms
     restart: always
@@ -12,13 +12,19 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - pickhealthy-net
 
 volumes:
   postgres_data:
 
+networks:
+  pickhealthy-net:
+    external: true
+
 # Para reiniciar el volumen de postgres
 # docker-compose down
 # docker volume rm commons-ms_postgres_data
-# docker-compose up -build
+# docker-compose up --build
 
 # Alternativa docker-compose up --build --force-recreate
